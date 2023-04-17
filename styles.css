@@ -32,7 +32,7 @@ h1 span {
 header {
   width: 100%;
   display: table;
-  background-color: #fde428;
+  background-color: aqua;
   margin-bottom: 50px;
 }
 #logo {
@@ -245,4 +245,19 @@ footer {
   h1 {
     padding: 20px 0px;
   }
+}
+img.zoom {
+  width: 350px;
+  height: 350px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+}
+
+.transition {
+  -webkit-transform: scale(1.8); 
+  -moz-transform: scale(1.8);
+  -o-transform: scale(1.8);
+  transform: scale(1.8);
 }
