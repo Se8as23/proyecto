@@ -18,10 +18,12 @@
 
 <nav>
 <ul>
+  
 <li><a href="#logo"><i class="icon-home"></i>QUE ES HTML</a></li>
 <li><a href="#about"><i class="icon-user"></i>QUE ES CSS</a></li>
 <li><a href="#portfolio"><i class="icon-thumbs-up-alt"></i>QUE ES JS</a></li>
 <li><a href="#services"><i class="icon-cog"></i>Contáctenos</a></li>
+<li><a href="#team"><i class="icon-users"></i>Estilos</a></li>
 
 </ul>
 </nav>
@@ -49,7 +51,6 @@ mediante la utilización de etiquetas.</p>
 </p>
 </div>
 </section>
-
 
 <section id="portfolio" class="content">
 <h2>QUE ES CSS</h2>
@@ -96,12 +97,13 @@ página web.
   <center>
 <h2>Formulario de Contacto</h2>
 
-
-
   <form onsubmit="return validarFormulario()" method="post" action="enviar_formulario.php">
+  
+
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre">
+      <input type="text" id="nombre" name="nombre" pattern="[a-zA-Z]+" required>
       <span id="errorNombre" class="error"></span>
+
 
       <label for="email">Email:</label>
       <input type="email" id="email" name="email">
@@ -112,53 +114,70 @@ página web.
       <span id="errorMensaje" class="error"></span>
 
       <input type="submit" value="Enviar">
-     
-
-      
+    
   </center>
   </form>
-
-
   <center>
   <!-- Overlay y contenido de la ventana modal -->
   <div class="overlay" id="overlay">
       <div class="modal" id="modal">
-          <p>  <center>Formulario enviado.</center></p> 
-          <button onclick="cerrarModal()">Ok</button>
+          <p>  <center>Formulario llenado.</center></p> 
+          
+            <button onclick="cerrarModal()">Aceptar</button>
+         
+          
       </div>
   </div>
 </center>
-
-
 </section>
 
-<center>
+<div class="resolucion">
+  <div class="desktop">
+  </div>
+  <div class="tablet">
+  </div>
+  <div class="celular">
+  </div>
+</div>
 
+
+<center>
+  <section id="team" class="content">
 <p>
+  <center>
 Cambia el estilo de tu página
+  </center>
 </p>
 <section>
 <center>
 <div class="btn-container">
+
 <button onclick="cambiarTamanioLetra(10)">A-</button>
 <button onclick="cambiarTamanioLetra(16)">A</button>
 <button onclick="cambiarTamanioLetra(20)">A+</button>
+
 </div>
 
 <div class="btn-container">
-<button onclick="cambiarColorFondo('#ffffff')">Blanco</button>
-<button onclick="cambiarColorFondo('aqua')">Aqua</button>
-<button onclick="cambiarColorFondo('#000000')">Negro</button>
+
+<button onclick="cambiarColorFondo('#ffffff')">Fondo Blanco</button>
+<button onclick="cambiarColorFondo('aqua')">Fondo Aqua</button>
+<button onclick="cambiarColorFondo('#000000')">Fondo Negro</button>
+
 </div>
 
 <div class="btn-container">
+ 
 <button onclick="cambiarTipoLetra('Arial')">Arial</button>
 <button onclick="cambiarTipoLetra('Times New Roman')">Times New Roman</button>
 <button onclick="cambiarTipoLetra('Courier New')">Courier New</button>
-</div>  
+
+</div>
+
 </center>
 </section>
 </center>
+</section>
 <script src="script.js"></script>
 </body>
 
