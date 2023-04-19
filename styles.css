@@ -1,4 +1,3 @@
-
 * {
   text-decoration: none;
   list-style: none;
@@ -9,7 +8,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 section {
   width: 100%;
@@ -94,7 +93,7 @@ nav ul li a i {
   margin-bottom: 0px;
 }
 
-input[type="checkbox"],
+input[type='checkbox'],
 label {
   display: none;
 }
@@ -156,13 +155,13 @@ footer {
   #logo {
     padding: 0px;
   }
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     position: absolute;
     top: -9999px;
     left: -9999px;
     background: none;
   }
-  input[type="checkbox"]:fous {
+  input[type='checkbox']:fous {
     background: none;
   }
   label {
@@ -171,7 +170,7 @@ footer {
     display: inline-block;
     cursor: pointer;
   }
-  input[type="checkbox"]:checked ~ nav {
+  input[type='checkbox']:checked ~ nav {
     display: block;
   }
 
@@ -248,37 +247,167 @@ footer {
   }
 }
 
-div{
+div {
   width: 200px;
   height: 150px;
   overflow: hidden;
   margin: 20px;
   float: left;
 }
-img{
+img {
   width: 100%;
   height: 100%;
   transition: 0.5s;
-  
 }
-img:hover{
+img:hover {
   transform: scale(1.2);
 }
-#apartado1{
+#apartado1 {
   width: 610px;
   border: 3px solid #002e5b;
   border-radius: 12px;
   background-color: rgba(255, 166, 0, 0.999);
 }
-#apartado2{
+#apartado2 {
   width: 610px;
   border: 3px solid #002e5b;
   border-radius: 12px;
   background-color: rgb(0, 98, 255);
 }
-#apartado3{
+#apartado3 {
   width: 610px;
   border: 3px solid #002e5b;
   border-radius: 12px;
   background-color: rgba(255, 255, 0, 0.582);
+}
+
+/* ESTILO CSS BOTONES*/
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 2px solid #333333;
+  color: #333333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/**ESTILOS FORMULARIO*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1 {
+  color: #000000;
+}
+form {
+  margin-top: 20px;
+}
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type='submit'] {
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.error {
+  color: violet;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+/* Estilo para el contenido de la ventana modal */
+.modal {
+  background-color: beige;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  opacity: 10;
+  transform: scale(0.8);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Mostrar la ventana modal */
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+/* Mostrar el contenido de la ventana modal */
+.modal.active {
+  opacity: 1;
+  transform: scale(1);
 }
