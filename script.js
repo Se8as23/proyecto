@@ -1,4 +1,4 @@
-console.log('Hello!');
+cconsole.log('Hello!');
 
 const form = document.querySelector('form');
 
