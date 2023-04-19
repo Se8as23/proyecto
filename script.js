@@ -1,11 +1,13 @@
 console.log('Hello!');
 
-
-
-
 console.log('Hello!');
 
+const form = document.querySelector('form');
 
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  console.log('Aquí puedes poner el código que quieres que se ejecute cuando se envía el formulario');
+});
 
 // Función para validar el formulario
 function validarFormulario() {
@@ -42,11 +44,12 @@ function validarFormulario() {
     document.getElementById('errorMensaje').innerText = '';
   }
 
+  mostrarModal()
   // Enviar el formulario si todos los campos son válidos
   return true;
 }
 
-// ventana 
+// ventana
 
 function mostrarModal() {
   var overlay = document.getElementById('overlay');
@@ -64,7 +67,7 @@ function cerrarModal() {
 
 // ESTILOS
 function cambiarTamanioLetra(tamanio) {
-  document.body.style.fontSize = tamanio + "px";
+  document.body.style.fontSize = tamanio + 'px';
 }
 
 function cambiarColorFondo(color) {
@@ -72,6 +75,5 @@ function cambiarColorFondo(color) {
 }
 
 function cambiarTipoLetra(tipo) {
-  document.body.style.fontFamily = tipo + ", sans-serif";
+  document.body.style.fontFamily = tipo + ', sans-serif';
 }
-
