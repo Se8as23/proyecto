@@ -14,7 +14,7 @@ body {
   font-family: 'Oswald';
   background: #242326;
   background: -webkit-linear-gradient(to right, #414345, #232526);
-  background: linear-gradient(to right, rgba(255, 166, 0, 0.999), #232526);
+  background: linear-gradient(to right, rgba(255, 166, 0, 0.842), #232526);
   background-attachment: fixed;
 }
 
