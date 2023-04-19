@@ -1,0 +1,170 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,700"); 
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald';
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, rgba(255, 255, 0, 0.582), #232526);
+  background-attachment: fixed;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  position: relative;
+  height: auto;
+}
+
+header .menu {
+  background: rgba(255,255,255,.7);
+  overflow: hidden;
+}
+
+header .logo {
+  color: rgba(0,0,0,.8);
+  float: left;
+  font-size: 30px;
+  line-height: 80px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  color: rgba(0,0,0,.8);
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  padding: 0 15px;
+  line-height: 80px;
+  transition: .3s;
+}
+
+header nav ul li:hover {
+  background: rgba(0,0,0,.8);
+  border-bottom: inset 5px solid #fff;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+}
+
+.menu-fixed {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  /* max-width: 99999999999999999px; */
+  width: 100%;
+  box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+}
+
+.texto {
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  font-weight: 400;
+}
+
+.texto h2, .texto p {
+  background: rgba(0,0,0,.8);
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.texto h2 {
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  font-weight: normal;
+}
+
+.texto p {
+  font-size: 20px;
+  letter-spacing: 2.5px;
+}
+
+/* Principal */
+.principal {
+  position: relative;
+  color: #000;
+}
+
+.principal article {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.principal article p {
+  margin-bottom: 20px;
+  line-height: 24px;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.principal article .fecha {
+  color: #939393;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+.button {
+  background: #7f8c8d;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.25em;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  box-shadow: 0px 3px 0px #373c3c;
+  outline: none;
+  border: none;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: none;
+  border: none;
+  transform: scale(1.25);
+}
+
+footer {
+  overflow: hidden;
+  min-height: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(51, 51, 51, 0.08);
+}
