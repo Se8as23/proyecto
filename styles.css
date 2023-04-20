@@ -195,7 +195,7 @@ footer {
   nav ul li a {
     color: #fff;
     font-size: 15px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: block;
     border-bottom: 1px solid rgba(225, 225, 225, 0.1);
   }
@@ -292,7 +292,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
@@ -318,13 +318,30 @@ button {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  background: #eb94d0;
+  background-color: #ffffff;
   border: 2px solid #333333;
   color: #333333;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  height: 30px;
+}
+
+button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  font-size: 17px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  padding: 0px;
+  background: #eb94d0;
+
   background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
   background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
@@ -348,24 +365,88 @@ p {
   line-height: 1.5;
 }
 
-/**ESTILOS FORMULARIO*/
+@media only screen and (max-width: 767px) {
+  /* Estilos para pantallas pequeñas */
 
-@media only screen and (max-width: 768px) {
-  /*Aqui va el codigo*/
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 5px;
+  }
 }
+
+/*estilo*/
+
+.content form {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.content form input,
+.content form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.content form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.content form .error {
+  color: red;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+/**ESTILOS FORMULARIO*/
 
 body {
   font-family: Arial, sans-serif;
 }
-
 .container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  width: 50%;
-  margin: 0 auto;
 }
-
 h1 {
   color: #000000;
 }
@@ -390,7 +471,9 @@ input[type='submit'] {
   margin-top: -10px;
   margin-bottom: 10px;
 }
-@media /* Estilo para el overlay */ .overlay {
+
+/* Estilo para el overlay */
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -430,3 +513,5 @@ input[type='submit'] {
   opacity: 1;
   transform: scale(1);
 }
+
+/*           */

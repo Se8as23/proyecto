@@ -1,12 +1,12 @@
 console.log('Hello!');
 
-console.log('Hello!');
-
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  console.log('Aquí puedes poner el código que quieres que se ejecute cuando se envía el formulario');
+  console.log(
+    'Aquí puedes poner el código que quieres que se ejecute cuando se envía el formulario'
+  );
 });
 
 // Función para validar el formulario
@@ -44,7 +44,7 @@ function validarFormulario() {
     document.getElementById('errorMensaje').innerText = '';
   }
 
-  mostrarModal()
+  mostrarModal();
   // Enviar el formulario si todos los campos son válidos
   return true;
 }
